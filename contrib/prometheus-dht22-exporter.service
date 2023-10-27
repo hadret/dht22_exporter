@@ -1,0 +1,15 @@
+[Unit]
+Description=Prometheus exporter for DHT22 metrics
+Documentation=https://github.com/hadret/dht22_exporter
+
+[Service]
+Restart=on-failure
+User=prometheus
+EnvironmentFile=/etc/default/prometheus-dht22-exporter
+ExecStart=/usr/local/bin/prometheus-dht22-exporter $ARGS
+ExecReload=/bin/kill -HUP $MAINPID
+TimeoutStopSec=20s
+SendSIGKILL=no
+
+[Install]
+WantedBy=multi-user.target
