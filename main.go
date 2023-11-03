@@ -52,7 +52,7 @@ func Gather() (float64, float64) {
 		log.Fatalf("error connecting to dht, %v", err)
 	}
 
-	humidity, temperature, err := dht.ReadRetry(5)
+	humidity, temperature, err := dht.ReadRetry(22)
 	if err != nil {
 		log.Printf("error reading temperature and humidity, %v", err)
 	}
