@@ -25,7 +25,7 @@ jobs:
         run: CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build -o dist/dht22_exporter-linux-amd64
 
       - name: Build linux/arm64
-        run: CGO_ENABLED=0 GOOS=linux GOARCH=arm64 go build -o dist/dht_22_exporter-linux-arm64
+        run: CGO_ENABLED=0 GOOS=linux GOARCH=arm64 go build -o dist/dht22_exporter-linux-arm64
 
       - name: Upload build artifacts
         uses: skx/github-action-publish-binaries@master
