@@ -2,6 +2,8 @@
 
 [DHT22](https://www.sparkfun.com/datasheets/Sensors/Temperature/DHT22.pdf) Prometheus exporter for temperature and humidity.
 
+![Sample Grafana dashboard](contrib/Grafana.png)
+
 ## Getting up to speed
 
 Grab one of the pre-built binaries available in [tags](https://github.com/hadret/dht22_exporter/tags) or a Docker container from GitHub' registry.
